@@ -9,4 +9,4 @@ jobs:
       - name: docker build
         run: docker build -t pretendersrg/skpr_srg_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
       - name: docker push
-        run: docker push -t pretendersrg/skpr_srg_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+        run: docker push pretendersrg/skpr_srg_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
